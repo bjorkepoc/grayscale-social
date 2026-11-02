@@ -1,0 +1,5 @@
+/* Top-layer elements (fullscreen video, modal dialogs) render outside html's filter. */
+html:not([data-grayscale-off]),
+html:not([data-grayscale-off]) :is(:fullscreen, :modal, :popover-open) {
+  filter: grayscale(1) !important;
+}

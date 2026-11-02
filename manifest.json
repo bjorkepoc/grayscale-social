@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "Gråtone",
+  "version": "1.0.0",
+  "description": "Gjør sosiale medier gråtonet, så de blir mindre distraherende. Klikk på ikonet for å slå av og på.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Gråtone",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bsky.app/*",
+        "*://*.discord.com/*",
+        "*://*.facebook.com/*",
+        "*://*.instagram.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.mastodon.social/*",
+        "*://*.pinterest.com/*",
+        "*://*.reddit.com/*",
+        "*://*.snapchat.com/*",
+        "*://*.threads.com/*",
+        "*://*.threads.net/*",
+        "*://*.tiktok.com/*",
+        "*://*.tumblr.com/*",
+        "*://*.twitch.tv/*",
+        "*://*.twitter.com/*",
+        "*://*.x.com/*",
+        "*://*.youtube.com/*"
+      ],
+      "css": ["grayscale.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
