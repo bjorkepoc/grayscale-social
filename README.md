@@ -25,7 +25,9 @@ Vil du legge til eller fjerne et nettsted, endrer du listen under `matches` i `m
 
 ## Personvern
 
-Gråtone samler ikke inn noe og sender ingenting noe sted. Det eneste den lagrer, er om den er på eller av, og det ligger lokalt i nettleseren din.
+Gråtone samler ikke inn noe og sender ingenting noe sted. Det eneste den lagrer, er om den er på eller av, og det ligger lokalt i nettleseren din. Har du spørsmål, kan du [opprette en sak](https://github.com/bjorkepoc/grayscale-social/issues).
+
+In English: Gråtone collects no data and sends nothing anywhere. The only thing it stores is whether it is switched on or off, locally in your browser. Questions are welcome as [GitHub issues](https://github.com/bjorkepoc/grayscale-social/issues).
 
 ## Oppdateringer
 
